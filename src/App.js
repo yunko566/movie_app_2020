@@ -1,25 +1,21 @@
 import React from 'react';
-import axios from 'axios';
 
 class App extends React.Component {
-  state = {
-    isLoding: true,
-    movies: [],
-  };
-  getMovies = async () => {
-    const movies = await axios.get("https://yts-proxy.now.sh/list_movies.json");
+  constructor(props) {
+    super(props);
+    console.log('constructor');
   }
-  componentDidMount() {
-    // 영화 데이터 로딩
-    this.getMovies();
-  }
+  
   render() {
-    const { isLoding } = this.state;
+    console.log('render!');
     return (
       <div>
-        {isLoding ? 'Loding...' : 'We are ready'}
+        <h1>당신은 피자를 좋아하나요? 대답해 주세요. {this.state.count}</h1>
+        <button onClick={this.add}>좋아요</button>&nbsp;&nbsp;&nbsp;
+        <button onClick={this.Minus}>싫어요</button>
       </div>
-    );    
+    
+    );
   }
 }
 
