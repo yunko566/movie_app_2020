@@ -3,6 +3,11 @@
 
 React Js Fundamentals Course 2020
 
+## 10월 30일
+>1. movies변수에 있는 movies 키의 값을 추출해 보았다.
+>2. isLoading state true에서 false로 업데이트 하는 법을 배워 보았다.
+>3. ES6에서는 객체의 키와 대입할 변수의 이름이 같다면 코드를 축약할 수 있다는 것을 배웠다.
+
 ## 10월 16일
 >1. stat는 동적 데이터를 다룰때 사용한다.
 >2. 그러나 porps는 동적 데이터를 다루지 못한다.

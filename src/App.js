@@ -1,22 +1,34 @@
 import React from 'react';
-
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    console.log('constructor');
+import axios from 'axios';
+class App extends React.Component{
+  state = {
+    isLoading: true,
+    movies : [],
+  };
+  getMovies= async () =>{
+    const {
+      data: {
+        data: {movies}
+      },
+    } = await axios.get('https://yts-proxy.now.sh/list_movies.json?sort_by=rating');
+    this.setState({movies, isLoading: false});
   }
-  
-  render() {
-    console.log('render!');
-    return (
+
+  componentDidMount(){
+   //영화 데이터 로딩
+   this.getMovies();
+  }
+
+  render(){
+    const { isLoading, movies } = this.state;
+    return(
       <div>
-        <h1>당신은 피자를 좋아하나요? 대답해 주세요. {this.state.count}</h1>
-        <button onClick={this.add}>좋아요</button>&nbsp;&nbsp;&nbsp;
-        <button onClick={this.Minus}>싫어요</button>
+        {isLoading ? 'Loading...': movies.map(
+          (movie) => this.state
+        )}
       </div>
-    
+      
     );
-  }
 }
-
+}
 export default App;
