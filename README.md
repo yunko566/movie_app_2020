@@ -3,6 +3,11 @@
 
 React Js Fundamentals Course 2020
 
+## 11월 06일
+>1. map()함수에 컴포넌트를 반환하는 함수 전달하는 것을 알아보았다.
+>2. Movie컴포넌트에 porps 전달하는 것을 알아보았다.
+>3. 영화 앱 전체 모습 수정하는 것을 알아보았다.
+
 ## 10월 30일
 >1. movies변수에 있는 movies 키의 값을 추출해 보았다.
 >2. isLoading state true에서 false로 업데이트 하는 법을 배워 보았다.
