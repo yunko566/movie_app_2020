@@ -3,6 +3,16 @@
 
 React Js Fundamentals Course 2020
 
+## 11월 27일
+>1. 리다이렉트 기능을 만들어 보았다.
+>2. 리다이렉트 기능을 사용하기 위해서는 route props의 history 키를 활용해야 한다는 것을 알아 보았다.
+>3. history키에는 push,go,goBack,goForward와 같은 키가 있으며, 그 키에는 URL을 변경해 주는 함수들이 있다는 것을 알아 보았다.
+
+## 11월 20일
+>1. 영화 상세 정보 기능을 만들어 보았다.
+>2. root props 기능에 대해 알아 보았다.
+>3. root props가 무엇인지 알아 보았다.
+
 ## 11월 13일
 >1. react-router-dom 을 설치해 보았다.
 >2. 라우터를 만들어 보고 기능을 알아 보았다.
